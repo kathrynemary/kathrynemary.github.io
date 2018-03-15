@@ -1,1 +1,38 @@
-$null 
+<<html>
+<head>
+	<title>Example Graph</title>
+
+	<script type="text/javascript">
+
+	var lastYear = {
+		asparagus:4,
+		celery:1,
+		greenApple:2,
+		greenGrape:1,
+		redApple:3,
+		redGrape:3
+	};
+	var thisYear = {
+		asparagus:3,
+		celery:3,
+		greenApple:4,
+		greenGrape:5,
+		redApple:3,
+		redGrape:1
+	};
+
+	function toggleVars() {
+		if (document.getElementById('year').innerHTML == 'this') {
+			document.getElementById('year').innerHTML = 'last';
+		}
+	}
+
+	</script>
+</head>
+<body>
+	<h3>How Did We Do?</h3>
+	<div>
+		<button id="year" onClick="toggleVars()">this</button>
+	</div>
+</body>
+</html>
